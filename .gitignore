@@ -1,3 +1,5 @@
 Lib
 /.vscode/settings.json
 /Scripts
+**/*.jpg
+**/*.csv
