@@ -11,7 +11,7 @@ def unifyPaths(IMGpath, path, isCustom):
 def importInputData(pathToCollectedData, isCustom):
     
     dropRate = 0.5
-    correction = 0.2
+    correction = 0.4
     sampleList = []
 
     with open(pathToCollectedData + 'driving_log.csv') as csvfile:

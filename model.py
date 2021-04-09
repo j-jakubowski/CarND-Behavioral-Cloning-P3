@@ -80,15 +80,16 @@ def NvidiaBasedModel():
 
 if __name__ == "__main__":
     sampleList = importInputData('./SampleData/', isCustom = False)
+    curve1 = importInputData('./Curve1/', isCustom = True)
 
-    dataSet =  sampleList 
+    dataSet =  sampleList #+ curve1
 
     print('Number of unique images ' + str(len(dataSet)))
 
-    plotHistogram(dataSet)
+    #plotHistogram(dataSet)
 
 
-    train_samples, validation_samples = train_test_split(dataSet, test_size=0.35)
+    train_samples, validation_samples = train_test_split(dataSet, test_size=0.2)
 
     batch_size=64
 
